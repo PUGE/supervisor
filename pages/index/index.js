@@ -28,7 +28,7 @@ Page({
                 openID: data['openID']
               })
               app.globalData.openID = data['openID']
-              console.log(data['openID'])
+              this.getData(app.globalData.openID)
             },
             fail: (res) => {
               console.log(res)
@@ -40,4 +40,22 @@ Page({
       }
     })
   },
+  getData: function (openID) {
+    wx.request({
+      url: 'https://going.run/miniprogram',
+      data: {
+        route: 'getUserData',
+        openid: openID,
+        appid: 'wxf4c672e17c4aac25',
+        name: 'supervisor'
+      },
+      success: (res) => {
+        const data = JSON.parse(res.data)
+        console.log(data)
+      },
+      fail: (res) => {
+        console.log(res)
+      }
+    })
+  }
 })
