@@ -1,0 +1,7 @@
+/* pages/index/addServe.wxss */
+button.add-button {
+  width: 96%;
+  margin-top: 20px;
+  color: white;
+  background-color: #009fe9;
+}

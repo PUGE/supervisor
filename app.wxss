@@ -8,3 +8,13 @@
   padding: 200rpx 0;
   box-sizing: border-box;
 } 
+
+@font-face {
+  font-family: 'puge';  /* project id 2241574 */
+  src: url('//at.alicdn.com/t/font_2241574_qrgbdpls6mp.eot');
+  src: url('//at.alicdn.com/t/font_2241574_qrgbdpls6mp.eot?#iefix') format('embedded-opentype'),
+  url('//at.alicdn.com/t/font_2241574_qrgbdpls6mp.woff2') format('woff2'),
+  url('//at.alicdn.com/t/font_2241574_qrgbdpls6mp.woff') format('woff'),
+  url('//at.alicdn.com/t/font_2241574_qrgbdpls6mp.ttf') format('truetype'),
+  url('//at.alicdn.com/t/font_2241574_qrgbdpls6mp.svg#puge') format('svg');
+}

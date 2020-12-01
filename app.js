@@ -1,6 +1,7 @@
 //app.js
 App({
   globalData: {
-    openid: null
+    openid: null,
+    serverList: []
   },
 })

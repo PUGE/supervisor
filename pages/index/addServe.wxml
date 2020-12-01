@@ -1,0 +1,32 @@
+<!--pages/index/addServe.wxml-->
+<view class="weui-cells__title">服务器地址:</view>
+<view class="weui-cells weui-cells_after-title">
+  <view class="weui-cell weui-cell_input">
+    <input class="weui-input" placeholder="supervisor服务器地址" value="{{ip}}" bindinput="setIP"/>
+  </view>
+</view>
+<view class="weui-cells__title">管理端口:</view>
+<view class="weui-cells weui-cells_after-title">
+  <view class="weui-cell weui-cell_input">
+    <input class="weui-input" placeholder="默认为9001" value="{{port}}" bindinput="setPort"/>
+  </view>
+</view>
+<view class="weui-cells__title">管理路径:</view>
+<view class="weui-cells weui-cells_after-title">
+  <view class="weui-cell weui-cell_input">
+    <input class="weui-input" placeholder="默认为9001" value="{{index}}" bindinput="setIndex"/>
+  </view>
+</view>
+<view class="weui-cells__title">用户名:</view>
+<view class="weui-cells weui-cells_after-title">
+  <view class="weui-cell weui-cell_input">
+    <input class="weui-input" placeholder="supervisor管理账号" value="{{userName}}" bindinput="setUserName"/>
+  </view>
+</view>
+<view class="weui-cells__title">密码:</view>
+<view class="weui-cells weui-cells_after-title">
+  <view class="weui-cell weui-cell_input">
+    <input class="weui-input" placeholder="supervisor管理密码" value="{{password}}" bindinput="setPassword"/>
+  </view>
+</view>
+<button class="add-button" bindtap="check">测试并添加</button>
