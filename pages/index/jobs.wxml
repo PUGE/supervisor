@@ -1,0 +1,15 @@
+<!--pages/index/jobs.wxml-->
+<view class="container">
+  <view class="jobsList-list">
+    <view class="jobsList-item" wx:for="{{jobsList}}" wx:key="job">
+      <view class="name">{{item.name}}</view>
+      <view class="start">启动时间: {{item.start}}</view>
+      <view class="logfile">日志文件: {{item.logfile}}</view>
+      <view class="state">{{item.stateText}}</view>
+      <view class="tool-bar">
+        <image wx:if="{{item.state == 20}}" class="stop" data-route="stopProcess" data-name="{{item.name}}" bindtap="sendMessage" src="../res/stop.svg"></image>
+        <image wx:else class="start" data-route="startProcess" data-name="{{item.name}}"  bindtap="sendMessage" src="../res/start.svg"></image>
+      </view>
+    </view>
+  </view>
+</view>

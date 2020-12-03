@@ -1,0 +1,41 @@
+/* pages/index/jobs.wxss */
+
+.jobsList-item {
+  border-radius: 5px;
+  padding: 15rpx;
+  font-size: 14px;
+  color: #333;
+  position: relative;
+  line-height: 24px;
+  margin-bottom: 20rpx;
+  background-color: #fffff3;
+  border: 1px solid #dddddd;
+  box-shadow: 1px 1px 5px #ddd;
+}
+.state {
+  position: absolute;
+  right: 15rpx;
+  top: 10rpx;
+}
+.name {
+  font-weight: bold;
+  border-bottom: 1px solid #ddd;
+  line-height: 30px;
+  font-size: 16px;
+  margin-bottom: 5px;
+}
+
+.tool-bar {
+  height: 30px;
+  display: flex;
+  align-items: center;
+  border-top: 1px solid #ddd;
+  margin-top: 5px;
+  padding-top: 5px;
+  justify-content: flex-end;
+}
+
+.tool-bar image {
+  width: 25px;
+  height: 25px;
+}

@@ -5,6 +5,7 @@ const app = getApp()
 Page({
   data: {
     openid: '',
+    serverList: []
   },
   onLoad: function () {
     var app = getApp()
@@ -29,7 +30,7 @@ Page({
                 openid: data['openID']
               })
               app.globalData.openid = data['openID']
-              this.getData(app.globalData.openid)
+              this.getData()
             },
             fail: (res) => {
               console.log(res)
@@ -41,22 +42,25 @@ Page({
       }
     })
   },
-  getData: function (openID) {
+  getData: function () {
     var app = getApp()
     wx.request({
       url: 'https://going.run/miniprogram',
       data: {
         route: 'getUserData',
-        openid: openID,
+        openid: app.globalData.openid,
         appid: 'wxf4c672e17c4aac25',
         name: 'supervisor'
       },
       success: (res) => {
         res = JSON.parse(res.data)
         if (res.err == 0) {
-          let data = res.value
+          let data = res.value.serverList
           if (!data) data = []
           app.globalData.serverList = data
+          this.setData({
+            serverList: data
+          })
           console.log(data)
         }
       },

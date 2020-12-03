@@ -1,5 +1,10 @@
 <!--index.wxml-->
 <view class="container">
+  <view class="server-list">
+    <navigator class="server-item" wx:for="{{serverList}}" wx:key="ip" url="/pages/index/jobs?index={{index}}">
+      <view class="ip">IP地址: {{item.ip}}</view>
+    </navigator>
+  </view>
   <navigator url="/pages/index/addServe" hover-class="navigator-hover" class="add">
     <image src="../res/add.svg"></image>
   </navigator>

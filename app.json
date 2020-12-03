@@ -2,7 +2,8 @@
   "pages": [
     "pages/index/index",
     "pages/logs/logs",
-    "pages/index/addServe"
+    "pages/index/addServe",
+    "pages/index/jobs"
   ],
   "window": {
     "backgroundTextStyle": "light",

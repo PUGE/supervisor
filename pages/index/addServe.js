@@ -5,11 +5,11 @@ Page({
    * 页面的初始数据
    */
   data: {
-    ip: "49.232.216.171",
+    ip: "",
     port: 9001,
     index: "RPC2",
-    userName: "puge",
-    password: "mmit7750"
+    userName: "",
+    password: ""
   },
   saveConfig: function (config) {
     var app = getApp()

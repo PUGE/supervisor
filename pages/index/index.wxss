@@ -31,3 +31,19 @@
   width: 100%;
   height: 100%;
 }
+
+.server-item {
+  background-color: #fffff3;
+  border: 1px solid #dddddd;
+  box-shadow: 1px 1px 5px #ddd;
+  border-radius: 10rpx;
+  padding: 15rpx;
+  margin-bottom: 15rpx;
+  
+  color: #575757;
+}
+
+.server-item .ip {
+  color: #333;
+  font-size: 14px;
+}
